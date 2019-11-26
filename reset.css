@@ -1,0 +1,71 @@
+.wrap{
+    background-color:#ffffff;
+    width:390px;
+}
+.header{
+  height:80px;
+  background-color:#ffffff;
+  font-size: 40px;
+  font-weight: bold;
+}
+input.title {
+  background: url( "image/whale_128.png" ) no-repeat;
+  border: none;
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  margin-left:5%;
+  margin-top:3%;
+  cursor: pointer;
+}
+.content{
+  background-color:#ffffff;
+  font-weight: lighter;
+}
+.left-button {
+  background: url( "image/left.gif" ) no-repeat;
+  float: left;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.right-button {
+  background: url( "image/right.gif" ) no-repeat;
+  float: right;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.date {
+  display:table;
+  margin-left:auto;
+  margin-right:auto;
+  top:-50px;
+  display:inline-block;
+}
+.table {
+  display:table;
+  display:inline-block;
+  top:-80px;
+}
+ .footer{
+  margin-top:auto;
+  height:300px;
+  background-color:#f0f0f0;
+  font-size:30px;
+  font-weight:bold;
+  color:lightgray;
+}
+input.erase {
+  position:relative;
+  width:300px;
+  height:40px;
+  border: none;
+  font-size: 22px;
+  font-weight: lighter;
+}
+a:link { color: black; text-decoration: none;}
+a:visited { color: black; text-decoration: none;}
+a:hover { color: blue; text-decoration: none;}

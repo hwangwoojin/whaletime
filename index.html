@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="reset.css" type="text/css">
+  </head>
+  <body>
+    <script type="text/javascript" src = "background.js"></script>
+    <script type="text/javascript" src="donut.js"></script>
+    <script type="text/javascript" src="date.js"></script>
+    <div class="wrap">
+      <!--title logo-->
+      <div class="header">
+          <input type="button" id="title" class="title">
+          <span style="margin-top:0%"> Whale Time</span><br>>
+      </div>
+      <!--left button / write button--->
+      <div class="content" style="height:50px; position:relative; z-index: 1;">
+          <input type="button" id="leftbutton" class="left-button">
+          <input type="button"  id="rightbutton" class="right-button">
+      </div>
+      <!--date-->
+      <div class="content" style="height:50px;text-align:center;font-size:20px;">
+          <span class="date" id="id_date" style="position:relative; z-index: 2;"></span>
+      </div>
+      <!--1 day graph-->
+      <div class="content" id="id_graph" style="height:300px;text-align:center;">
+        <script src = "donut.js"></script>
+        <div class="table" id="id_donut" style="position:relative;"></div>
+      </div>
+      <!--erase history-->
+      <div class="content" style="height:100px;text-align:center;">
+        <input type="button" id="erasethis" value="Delete current history" class="erase">
+        <br><br><input type="button"  id="eraseall" value="Delete all history" class="erase">
+      </div>
+      <div style="font-size:10px;top:20px;text-align:center;">Caution : No turning back.</div><br>
+      <!-- statistics-->
+      <br><div class="content" style="text-align:center; min-height:300px;">
+        <div style="position:relative; z-index: 3;font-size:25px;">
+            <span>Visits</span>
+            <br><span id="countvisited" style="font-weight: bold;">
+              </span><br>
+        </div>
+        <div style="position:relative; z-index: 3;font-size:25px;">
+          <span>Most visited</span>
+          <br><span id="mostvisited" style="font-weight:bold;text-decoration:none;">
+          </span><br>
+        </div>
+        <div style="position:relative; z-index: 3;">
+          <span style="font-size:25px;">visited</span>
+          <br><span id="allvisited" style="font-weight: bold;word-break:break-all;font-size:15px;">
+          </span><br>
+        </div>
+        <div style="position:relative; z-index: 3;">
+          <span style="font-size:25px;">history</span>
+          <br><span id="detailvisited" style="font-weight: bold;word-break:break-all;font-size:13px;">
+          </span><br>
+        </div>
+      </div>
+      <!--endgame-->
+      <div class="footer">
+        <div style="margin-left:5%;font-weight:light;font-size:30px">
+          <br><div style="font-weight:bold">Whale Time</div>
+          <br><div style="font-size:20px">Chrome extension applications for browser history control</div>
+          <br><div style="font-size:15px">whaletime Version 1.0.0</div>
+          <br><div style="font-size:15px">by woojinhwang@khu.ac.kr</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
